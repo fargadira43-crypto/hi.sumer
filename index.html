@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi.sumer</title>
+    <style>
+        /* ===== Generated Design Styles ===== */
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: "Arial", Arial, sans-serif; margin: 0; padding: 0; background: #ffffff; }
+        .sketch-canvas { max-width: 1100px; width: 100%; margin: 0 auto; overflow-x: hidden; }
+        .sketch-canvas img { max-width: 100%; }
+        #header_1793148145526 { position: relative; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; min-height: 70px; background-color: #0277BD; padding: 10px 24px; }
+        #header_1793148145526 .header-left { display: flex; align-items: center; gap: 10px; min-width: 0; }
+        #header_1793148145526 .logo-img { height: 42px; width: auto; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+        #header_1793148145526 .header-text { color: #ffffff; font-size: 14px; font-family: Arial; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        #header_1793148145526 .menu-toggle { display: flex; align-items: center; gap: 8px; background: none; border: none; cursor: pointer; padding: 6px 4px; flex-shrink: 0; }
+        #header_1793148145526 .menu-toggle .menu-label { color: #ffffff; font-size: 14px; font-family: Arial; font-weight: 600; }
+        #header_1793148145526 .hamburger-icon { display: flex; flex-direction: column; gap: 4px; }
+        #header_1793148145526 .hamburger-icon span { display: block; width: 24px; height: 3px; background-color: #ffffff; border-radius: 2px; transition: transform 0.2s ease, opacity 0.2s ease; }
+        #header_1793148145526 .nav-menu { display: flex; flex-direction: column; position: absolute; top: 100%; right: 24px; margin-top: 8px; background-color: #0277BD; border-radius: 8px; overflow: hidden; z-index: 50; box-shadow: 0 6px 18px rgba(0,0,0,0.2); min-width: 180px; max-width: min(90vw, 320px); opacity: 0; visibility: hidden; transform: translateY(-8px); transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease; pointer-events: none; }
+        #header_1793148145526 .nav-menu.open { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+        #header_1793148145526 .nav-menu a { color: #ffffff; font-size: 14px; font-family: Arial; text-decoration: none; font-weight: 600; cursor: pointer; padding: 12px 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        #header_1793148145526 .nav-menu a:hover { background-color: rgba(255,255,255,0.15); }
+        @media (max-width: 480px) {
+            #header_1793148145526 .nav-menu { left: 16px; right: 16px; min-width: 0; max-width: none; }
+        }
+        #footer_1793148150090 { background-color: #161616; color: #ffffff; font-size: 12px; font-family: Arial; text-align: center; padding: 20px 12px; }
+        #services_1793148159477 { background-color: #ffffff; padding: 44px 20px; }
+        #services_1793148159477 .services-track { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; padding-bottom: 8px; }
+        #services_1793148159477 .services-track::-webkit-scrollbar { height: 0; }
+        #services_1793148159477 .service-card { flex: 0 0 220px; scroll-snap-align: start; background-color: #f7f7f7; border-radius: 10px; padding: 20px; box-sizing: border-box; }
+        #services_1793148159477 .service-card h3 { color: #000000; font-size: 18px; font-family: Arial; margin: 0 0 8px 0; }
+        #services_1793148159477 .service-card p { color: #555555; font-size: 13px; font-family: Arial; margin: 0; line-height: 1.5; }
+        #store_1793148162489 { background-color: #ffffff; padding: 44px 20px; }
+        #store_1793148162489 .store-search { display: block; width: 100%; max-width: 420px; margin: 0 auto 24px; padding: 12px 14px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; font-family: Arial; box-sizing: border-box; }
+        #store_1793148162489 .store-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
+        #store_1793148162489 .store-card { background-color: #f7f7f7; border-radius: 10px; padding: 14px; cursor: pointer; box-sizing: border-box; transition: transform .2s ease; }
+        #store_1793148162489 .store-card:hover { transform: translateY(-3px); }
+        #store_1793148162489 .store-card img { width: 100%; height: 120px; object-fit: cover; border-radius: 6px; margin-bottom: 10px; background: #e0e0e0; }
+        #store_1793148162489 .store-title { color: #000000; font-size: 15px; font-family: Arial; font-weight: 600; margin-bottom: 4px; }
+        #store_1793148162489 .store-price { color: #e53935; font-size: 14px; font-family: Arial; font-weight: 600; margin-bottom: 6px; }
+        #store_1793148162489 .store-desc-short { color: #555555; font-size: 12px; font-family: Arial; margin: 0; line-height: 1.4; }
+        #store_1793148162489 .store-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 9999; align-items: center; justify-content: center; padding: 20px; }
+        #store_1793148162489 .store-modal.open { display: flex; }
+        #store_1793148162489 .store-modal-inner { background: #ffffff; border-radius: 10px; max-width: 360px; width: 100%; padding: 26px; position: relative; text-align: center; font-family: Arial; }
+        #store_1793148162489 .store-modal-close { position: absolute; top: 8px; right: 14px; cursor: pointer; font-size: 22px; color: #888; line-height: 1; }
+        #store_1793148162489 .store-modal-img { width: 100%; max-height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 14px; background: #e0e0e0; }
+        #store_1793148162489 .store-modal-title { color: #000000; font-size: 18px; font-weight: 700; margin: 0 0 6px 0; }
+        #store_1793148162489 .store-modal-price { color: #e53935; font-size: 15px; font-weight: 600; margin-bottom: 10px; }
+        #store_1793148162489 .store-modal-desc { color: #555555; font-size: 13px; line-height: 1.6; margin: 0 0 16px 0; }
+        #store_1793148162489 .store-modal-btn { display: inline-block; padding: 11px 24px; border-radius: 6px; background-color: #1565c0; color: #ffffff; text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="sketch-canvas">
+        <header id="header_1793148145526">
+            <div class="header-left">
+                <span class="header-text">My Website</span>
+            </div>
+            <button type="button" class="menu-toggle" id="header_1793148145526_menu_btn" aria-label="Menu" aria-haspopup="true" aria-expanded="false" aria-controls="header_1793148145526_menu">
+                <span class="menu-label">Menu</span>
+                <span class="hamburger-icon"><span></span><span></span><span></span></span>
+            </button>
+            <nav class="nav-menu" id="header_1793148145526_menu">
+                <a href="#home" data-scroll-target="home">Home</a>
+                <a href="#about" data-scroll-target="about">About</a>
+            </nav>
+        </header>
+        <footer id="footer_1793148150090">© 2026 My Website. All rights reserved.</footer>
+        <section id="services_1793148159477" class="services-section">
+            <div class="services-track">
+                <div class="service-card">
+                    <h3>Service One</h3>
+                    <p>A short description of this service.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Service Two</h3>
+                    <p>A short description of this service.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Service Three</h3>
+                    <p>A short description of this service.</p>
+                </div>
+            </div>
+        </section>
+        <section id="store_1793148162489" class="store-section">
+            <input type="text" class="store-search" placeholder="Search products..." />
+            <div class="store-grid">
+                <div class="store-card" style="background-color: #f7f7f7;" data-name="Product One" data-price="$19.99" data-desc="A short product description." data-img="" data-btntext="Order Now" data-url="https://">
+                    <img alt="" />
+                    <div class="store-title">Product One</div>
+                    <div class="store-price">$19.99</div>
+                    <p class="store-desc-short">A short product description.</p>
+                </div>
+            </div>
+            <div class="store-modal" id="store_1793148162489_modal">
+                <div class="store-modal-inner">
+                    <span class="store-modal-close">&times;</span>
+                    <img class="store-modal-img" alt="" />
+                    <h3 class="store-modal-title"></h3>
+                    <div class="store-modal-price"></div>
+                    <p class="store-modal-desc"></p>
+                    <a class="store-modal-btn" target="_blank" rel="noopener"></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        (function(){
+            function initMenu() {
+                var btn = document.getElementById('header_1793148145526_menu_btn');
+                var menu = document.getElementById('header_1793148145526_menu');
+                if (!btn || !menu) return false;
+                if (btn.dataset.initialized) return true;
+                btn.dataset.initialized = 'true';
+                function closeMenu() {
+                    menu.classList.remove('open');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+                function toggleMenu(e) {
+                    e.stopPropagation();
+                    var isOpen = menu.classList.toggle('open');
+                    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                }
+                btn.addEventListener('click', toggleMenu);
+                menu.querySelectorAll('a').forEach(function(a){
+                    a.addEventListener('click', function(e){
+                        e.preventDefault();
+                        closeMenu();
+                        var targetId = a.getAttribute('data-scroll-target');
+                        var targetEl = targetId ? document.getElementById(targetId) : null;
+                        if (targetEl) {
+                            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    });
+                });
+                document.addEventListener('click', function(e){
+                    if (!menu.contains(e.target) && e.target !== btn) closeMenu();
+                });
+                document.addEventListener('keydown', function(e){
+                    if (e.key === 'Escape') closeMenu();
+                });
+                return true;
+            }
+            if (!initMenu()) {
+                var attempts = 0;
+                var timer = setInterval(function() {
+                    attempts++;
+                    if (initMenu() || attempts > 20) {
+                        clearInterval(timer);
+                    }
+                }, 100);
+            }
+        })();
+        (function(){
+            var track = document.querySelector('#services_1793148159477 .services-track');
+            if (!track) return;
+            var autoplayMs = 3 * 1000;
+            var paused = false, resumeTimer = null;
+            function next(){
+                if (paused) return;
+                var card = track.querySelector('.service-card');
+                var step = card ? card.offsetWidth + 16 : 220;
+                if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 5) {
+                    track.scrollTo({left: 0, behavior: 'smooth'});
+                } else {
+                    track.scrollBy({left: step, behavior: 'smooth'});
+                }
+            }
+            setInterval(next, autoplayMs);
+            function onManual(){
+                paused = true;
+                clearTimeout(resumeTimer);
+                resumeTimer = setTimeout(function(){ paused = false; }, autoplayMs);
+            }
+            track.addEventListener('touchstart', onManual, {passive: true});
+            track.addEventListener('mousedown', onManual);
+            track.addEventListener('wheel', onManual, {passive: true});
+        })();
+        (function(){
+            var root = document.getElementById('store_1793148162489');
+            if (!root) return;
+            var search = root.querySelector('.store-search');
+            var cards = root.querySelectorAll('.store-card');
+            var modal = document.getElementById('store_1793148162489_modal');
+            if (search) {
+                search.addEventListener('input', function(){
+                    var q = search.value.trim().toLowerCase();
+                    cards.forEach(function(card){
+                        var name = (card.getAttribute('data-name') || '').toLowerCase();
+                        card.style.display = name.indexOf(q) !== -1 ? '' : 'none';
+                    });
+                });
+            }
+            cards.forEach(function(card){
+                card.addEventListener('click', function(){
+                    if (!modal) return;
+                    modal.querySelector('.store-modal-img').src = card.getAttribute('data-img') || '';
+                    modal.querySelector('.store-modal-title').textContent = card.getAttribute('data-name') || '';
+                    modal.querySelector('.store-modal-price').textContent = card.getAttribute('data-price') || '';
+                    modal.querySelector('.store-modal-desc').textContent = card.getAttribute('data-desc') || '';
+                    var btn = modal.querySelector('.store-modal-btn');
+                    btn.textContent = card.getAttribute('data-btntext') || 'Order Now';
+                    btn.href = card.getAttribute('data-url') || '#';
+                    modal.classList.add('open');
+                });
+            });
+            if (modal) {
+                modal.querySelector('.store-modal-close').addEventListener('click', function(){
+                    modal.classList.remove('open');
+                });
+                modal.addEventListener('click', function(e){
+                    if (e.target === modal) modal.classList.remove('open');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
